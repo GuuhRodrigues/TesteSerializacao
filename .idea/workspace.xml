@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab8c8b88-4136-4e2c-8842-f4f3ac4b3807" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TesteSerializacao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ManipuladorDeArquivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TesteReaderAndWriter.java" afterDir="false" />
-    </list>
+    <list default="true" id="ab8c8b88-4136-4e2c-8842-f4f3ac4b3807" name="Changes" comment="Feat: cria classes e metodos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +55,14 @@
       <option name="presentableId" value="Default" />
       <updated>1683067306228</updated>
     </task>
+    <task id="LOCAL-00001" summary="Feat: cria classes e metodos">
+      <created>1683077617349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683077617349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: cria classes e metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: cria classes e metodos" />
   </component>
 </project>
