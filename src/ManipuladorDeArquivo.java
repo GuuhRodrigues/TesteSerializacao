@@ -10,7 +10,6 @@ public class ManipuladorDeArquivo {
             } else
                 break;
             linha = buffRead.readLine();
-            System.out.println(linha);
         }
             buffRead.close();
         }
@@ -23,27 +22,19 @@ public class ManipuladorDeArquivo {
     }
 
     public static void juntar(String path, String path2, String path3) throws IOException{
-        BufferedWriter buffWriter = new BufferedWriter(new FileWriter(path3));
-        BufferedReader buffReader2 = new BufferedReader(new FileReader(path2));
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        BufferedReader buffRead2 = new BufferedReader(new FileReader(path));
+        BufferedReader nomes = new BufferedReader(new FileReader(path));
+        BufferedReader sobrenomes = new BufferedReader(new FileReader(path2));
+        BufferedWriter nomes_e_sobrenomes = new BufferedWriter(new FileWriter(path3));
 
-        String linha = "";
-        String linhaConjunta = "";
-        while (true) {
-            if (linha != null) {
-                //System.out.println(linha);
-            } else
-                break;
+        String nome, sobrenome;
 
-            linha = buffRead.readLine();
-            linhaConjunta =  buffRead2.readLine() + " " + buffReader2.readLine();
-            buffWriter.append(linhaConjunta + "\n");
+        while ((nome = nomes.readLine()) != null && (sobrenome = sobrenomes.readLine()) != null) {
+            nomes_e_sobrenomes.write(nome + " " + sobrenome);
+            nomes_e_sobrenomes.newLine();
         }
-
-        buffRead.close();
-        buffWriter.close();
-        buffReader2.close();
+        nomes.close();
+        sobrenomes.close();
+        nomes_e_sobrenomes.close();
     }
 }
 
